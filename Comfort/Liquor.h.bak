@@ -1,0 +1,26 @@
+//
+//  Liquor.h
+//  Comfort
+//
+//  Created by Derek Salerno on 1/31/13.
+//  Copyright (c) 2013 Derek Salerno. All rights reserved.
+//
+
+#import "MenuItem.h"
+
+@interface Liquor : MenuItem
+@property (strong, nonatomic) NSString* distiller;
+@property (strong, nonatomic) NSString* bottling;
+@property (strong, nonatomic) NSString* proof;
+@property (strong, nonatomic) NSString* place;
+@property (strong, nonatomic) NSString* age;
+@property (strong, nonatomic) NSString* type;
+@property (nonatomic, assign) BOOL isCocktail;
+@property (nonatomic, assign) BOOL hasBottling;
+@property (nonatomic, assign) BOOL hasAge;
+-(NSString*)description;
+-(NSString*)subTitleDescription;
+-(NSString*)category;
+-(NSString*)detailString;
+
+@end

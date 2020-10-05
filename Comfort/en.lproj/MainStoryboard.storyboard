@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jWA-M8-K8v">
+    <dependencies>
+        <deployment version="1536" defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller - Wine -->
+        <scene sceneID="zT9-iP-8QO">
+            <objects>
+                <viewController title="Wine " id="7JO-e7-VBY" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V5w-FA-7oT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTI-bh-yZZ" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="54" width="225" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="Ey4-y5-Jqf"/>
+                                    <constraint firstAttribute="height" constant="40" id="Vld-Um-D2W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Reds by the Glass">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showRedBTG" id="KPC-7G-VIE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFm-Ou-Dkg" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="148" width="225" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="jFZ-92-Iuy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Whites by the Glass">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showWhiteBTG" id="02s-2M-WAS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8L-2w-SFa" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="245" width="225" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="mf1-TI-arP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Reds by the Bottle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showRedBottle" id="Wao-7I-9C0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzG-fv-CMA" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="345" width="225" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="OI8-Ai-WxQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Whites by the Bottle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showWhiteBottle" id="uTB-Tr-cFU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZFm-Ou-Dkg" firstAttribute="centerX" secondItem="V5w-FA-7oT" secondAttribute="centerX" id="01j-yL-yJ6"/>
+                            <constraint firstItem="H8L-2w-SFa" firstAttribute="trailing" secondItem="gzG-fv-CMA" secondAttribute="trailing" id="46g-dN-Oml"/>
+                            <constraint firstItem="H8L-2w-SFa" firstAttribute="trailing" secondItem="ZFm-Ou-Dkg" secondAttribute="trailing" id="7rr-Ki-7fN"/>
+                            <constraint firstItem="yTI-bh-yZZ" firstAttribute="top" secondItem="V5w-FA-7oT" secondAttribute="top" constant="54" id="JhS-fJ-0DO"/>
+                            <constraint firstItem="ZFm-Ou-Dkg" firstAttribute="leading" secondItem="H8L-2w-SFa" secondAttribute="leading" id="Wvj-30-5xZ"/>
+                            <constraint firstItem="gzG-fv-CMA" firstAttribute="top" secondItem="H8L-2w-SFa" secondAttribute="bottom" constant="54" id="Yss-dP-iYa"/>
+                            <constraint firstItem="ZFm-Ou-Dkg" firstAttribute="top" secondItem="yTI-bh-yZZ" secondAttribute="bottom" constant="54" id="Zuw-Z4-KcP"/>
+                            <constraint firstItem="yTI-bh-yZZ" firstAttribute="trailing" secondItem="ZFm-Ou-Dkg" secondAttribute="trailing" id="a12-xj-eoG"/>
+                            <constraint firstItem="gzG-fv-CMA" firstAttribute="leading" secondItem="H8L-2w-SFa" secondAttribute="leading" id="czc-FD-iUd"/>
+                            <constraint firstItem="ZFm-Ou-Dkg" firstAttribute="leading" secondItem="yTI-bh-yZZ" secondAttribute="leading" id="u7Z-ws-JML"/>
+                            <constraint firstItem="H8L-2w-SFa" firstAttribute="top" secondItem="ZFm-Ou-Dkg" secondAttribute="bottom" constant="54" id="yc8-yh-kWE"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Wine" id="bww-bm-OJS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPW-xs-x04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-772"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ehE-1R-I7N">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="jWA-M8-K8v" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Utj-Q4-MoR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nic-SB-VlN" kind="relationship" relationship="rootViewController" id="dNK-1L-V1G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFy-qH-qF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="35"/>
+        </scene>
+        <!--Main View Controller - Main -->
+        <scene sceneID="g32-f8-U1C">
+            <objects>
+                <viewController title="Main " wantsFullScreenLayout="YES" id="Nic-SB-VlN" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="JDD-CE-miZ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="comfort_pig.png" translatesAutoresizingMaskIntoConstraints="NO" id="nwZ-Fm-BEm">
+                                <rect key="frame" x="0.0" y="138" width="320" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="223" id="unY-PD-uk1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="comfort_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xvb-sU-g3b">
+                                <rect key="frame" x="34" y="36" width="252" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="kpe-H1-bBX"/>
+                                    <constraint firstAttribute="height" constant="62" id="ujj-Pj-L9b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQS-pc-S7I" customClass="ClarendonButton">
+                                <rect key="frame" x="128" y="434" width="65" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Fdv-9r-j57"/>
+                                    <constraint firstAttribute="height" constant="44" id="G39-Qv-uTi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="drink.">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yUK-sj-fWt" kind="push" id="cR0-V2-RRo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xvb-sU-g3b" firstAttribute="top" secondItem="JDD-CE-miZ" secondAttribute="top" constant="36" id="5H2-hR-0uz"/>
+                            <constraint firstItem="nwZ-Fm-BEm" firstAttribute="leading" secondItem="JDD-CE-miZ" secondAttribute="leading" id="5Ny-nG-T2S"/>
+                            <constraint firstItem="Xvb-sU-g3b" firstAttribute="centerX" secondItem="nwZ-Fm-BEm" secondAttribute="centerX" id="WVe-6F-yz9"/>
+                            <constraint firstItem="nwZ-Fm-BEm" firstAttribute="top" secondItem="Xvb-sU-g3b" secondAttribute="bottom" constant="40" id="ZR4-vL-WjR"/>
+                            <constraint firstAttribute="bottom" secondItem="WQS-pc-S7I" secondAttribute="bottom" constant="26" id="aip-FX-TtZ"/>
+                            <constraint firstItem="nwZ-Fm-BEm" firstAttribute="trailing" secondItem="JDD-CE-miZ" secondAttribute="trailing" id="h07-bn-yN7"/>
+                            <constraint firstItem="nwZ-Fm-BEm" firstAttribute="centerX" secondItem="WQS-pc-S7I" secondAttribute="centerX" id="uNp-Uh-Jeg"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Comfort" id="twn-rq-kY4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4g-7O-ndA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="178"/>
+        </scene>
+        <!--Main View Controller - Bar-->
+        <scene sceneID="W4I-lU-5L8">
+            <objects>
+                <viewController title="Bar" id="yUK-sj-fWt" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ug-7h-WgU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBw-21-vr8" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="124" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hXQ-aI-Bj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Beer">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nuW-1c-17z" kind="push" id="6Km-ia-QSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYC-hC-de7" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="204" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4mq-wE-k6Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Wine">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7JO-e7-VBY" kind="push" id="ztz-qu-qnd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laH-9l-mMk" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="44" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="3IU-7R-rAZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="YpT-7O-sNr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Cocktails">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showCocktails" id="LlX-og-dvg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqm-YS-QCp" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="284" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9g0-ge-QHW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ghV-qt-Pcu" kind="push" id="uYL-lW-RzA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-jb-McA" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="364" width="225" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="arC-pi-Tf6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Check for Updates">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkForUpdates:" destination="yUK-sj-fWt" eventType="touchUpInside" id="gJX-w6-adc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EYC-hC-de7" firstAttribute="top" secondItem="EBw-21-vr8" secondAttribute="bottom" constant="36" id="3NT-pa-tHS"/>
+                            <constraint firstItem="yqm-YS-QCp" firstAttribute="top" secondItem="EYC-hC-de7" secondAttribute="bottom" constant="36" id="4RD-AM-AFs"/>
+                            <constraint firstItem="Zl6-jb-McA" firstAttribute="centerX" secondItem="8Ug-7h-WgU" secondAttribute="centerX" id="5lN-ND-kR7"/>
+                            <constraint firstItem="laH-9l-mMk" firstAttribute="leading" secondItem="EBw-21-vr8" secondAttribute="leading" id="7ET-el-8Oh"/>
+                            <constraint firstItem="Zl6-jb-McA" firstAttribute="leading" secondItem="yqm-YS-QCp" secondAttribute="leading" id="Nsf-Og-ciM"/>
+                            <constraint firstItem="EBw-21-vr8" firstAttribute="top" secondItem="laH-9l-mMk" secondAttribute="bottom" constant="36" id="Oh7-pF-WvL"/>
+                            <constraint firstItem="EBw-21-vr8" firstAttribute="leading" secondItem="EYC-hC-de7" secondAttribute="leading" id="R0b-8O-vVp"/>
+                            <constraint firstItem="laH-9l-mMk" firstAttribute="trailing" secondItem="EBw-21-vr8" secondAttribute="trailing" id="fim-0F-g0Q"/>
+                            <constraint firstItem="laH-9l-mMk" firstAttribute="top" secondItem="8Ug-7h-WgU" secondAttribute="top" constant="44" id="hSz-dS-ZdT"/>
+                            <constraint firstItem="yqm-YS-QCp" firstAttribute="trailing" secondItem="Zl6-jb-McA" secondAttribute="trailing" id="jFJ-Vg-Aht"/>
+                            <constraint firstItem="EYC-hC-de7" firstAttribute="trailing" secondItem="EBw-21-vr8" secondAttribute="trailing" id="o67-nc-eC3"/>
+                            <constraint firstItem="Zl6-jb-McA" firstAttribute="top" secondItem="yqm-YS-QCp" secondAttribute="bottom" constant="36" id="qB9-Xb-xwC"/>
+                            <constraint firstItem="EYC-hC-de7" firstAttribute="trailing" secondItem="yqm-YS-QCp" secondAttribute="trailing" id="uJQ-Vt-MeN"/>
+                            <constraint firstItem="yqm-YS-QCp" firstAttribute="leading" secondItem="EYC-hC-de7" secondAttribute="leading" id="yqf-Xz-Gd2"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Bar Main" id="m1P-bC-bf4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaF-CB-ygm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="30"/>
+        </scene>
+        <!--Main View Controller - Beer -->
+        <scene sceneID="uPm-32-WV9">
+            <objects>
+                <viewController title="Beer " id="nuW-1c-17z" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qwv-he-Tzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-Ia-YQ2" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="54" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HWe-Kd-o2d"/>
+                                    <constraint firstAttribute="width" constant="225" id="hO5-jz-gIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Draft">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showDraft" id="fYB-HS-0Gg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOm-sO-U5C" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="152" width="225" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="American Microbrew">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showMicrobrew" id="EQK-VI-vYb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xy-J8-ars" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="348" width="225" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Import">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showImportBeer" id="3sT-mb-y6n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrl-WZ-hy3" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="250" width="225" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Domestic">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showDomesticBeer" id="V0y-f8-A2G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="qwv-he-Tzy" secondAttribute="centerX" id="2Ug-O1-o7t"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="5X4-Ia-YQ2" secondAttribute="centerX" id="7Z4-PH-WEg"/>
+                            <constraint firstItem="5X4-Ia-YQ2" firstAttribute="top" secondItem="qwv-he-Tzy" secondAttribute="top" constant="54" id="8TA-l6-bFx"/>
+                            <constraint firstItem="5X4-Ia-YQ2" firstAttribute="leading" secondItem="vOm-sO-U5C" secondAttribute="leading" id="CpS-NM-OSr"/>
+                            <constraint firstItem="vOm-sO-U5C" firstAttribute="leading" secondItem="Hrl-WZ-hy3" secondAttribute="leading" id="H7v-uH-NmP"/>
+                            <constraint firstItem="vOm-sO-U5C" firstAttribute="top" secondItem="5X4-Ia-YQ2" secondAttribute="bottom" constant="54" id="IY6-M7-2wC"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="5X4-Ia-YQ2" secondAttribute="centerX" id="LbY-SJ-tdg"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="vOm-sO-U5C" secondAttribute="centerX" id="MCr-ri-p9B"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="height" secondItem="5X4-Ia-YQ2" secondAttribute="height" id="XMw-8H-whb"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="Hrl-WZ-hy3" secondAttribute="centerX" id="Zot-77-yml"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="top" secondItem="Hrl-WZ-hy3" secondAttribute="bottom" constant="54" id="b33-Kz-N7s"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="Hrl-WZ-hy3" secondAttribute="centerX" id="eWF-vl-j7X"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="height" secondItem="Hrl-WZ-hy3" secondAttribute="height" id="gJj-ei-Qgm"/>
+                            <constraint firstItem="Hrl-WZ-hy3" firstAttribute="top" secondItem="vOm-sO-U5C" secondAttribute="bottom" constant="54" id="jiH-jH-R9m"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="leading" secondItem="Hrl-WZ-hy3" secondAttribute="leading" id="msX-hT-57Q"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="height" secondItem="vOm-sO-U5C" secondAttribute="height" id="qWs-Cf-pbO"/>
+                            <constraint firstItem="5Xy-J8-ars" firstAttribute="centerX" secondItem="vOm-sO-U5C" secondAttribute="centerX" id="ywX-Sw-iCp"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Beer" id="gjH-dp-dde"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCO-Nu-0GN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-28"/>
+        </scene>
+        <!--Main View Controller - Whiskey-->
+        <scene sceneID="DDx-tK-poj">
+            <objects>
+                <viewController title="Whiskey" id="ghV-qt-Pcu" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RND-6z-CcH" colorLabel="IBBuiltInLabel-Yellow">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfH-Ud-i97" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="54" width="225" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Qdc-oh-DiF"/>
+                                    <constraint firstAttribute="width" constant="225" id="q9e-Zm-baD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Straight Bourbon">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showBourbon" id="0Nj-yI-3zk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjE-jA-OKF" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="157" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GhS-NJ-fTZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="American Rye">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showRye" id="A5J-ER-79r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtn-u2-J4h" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="255" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mSd-Io-fJB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Other American">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RMx-Ln-bM2" kind="push" id="8pn-m7-R45"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftc-Bg-8Ss" customClass="ClarendonButton" colorLabel="IBBuiltInLabel-Yellow">
+                                <rect key="frame" x="48" y="353" width="225" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="as1-XI-pGk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Imported Whisk(e)y">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7iY-Ps-a87" kind="push" id="h3b-2e-NZq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mfH-Ud-i97" firstAttribute="centerX" secondItem="DjE-jA-OKF" secondAttribute="centerX" id="9IH-U3-hY3"/>
+                            <constraint firstItem="Ftc-Bg-8Ss" firstAttribute="centerX" secondItem="RND-6z-CcH" secondAttribute="centerX" id="Asd-SP-Mta"/>
+                            <constraint firstItem="mfH-Ud-i97" firstAttribute="centerX" secondItem="gtn-u2-J4h" secondAttribute="centerX" id="RPJ-PH-fId"/>
+                            <constraint firstItem="mfH-Ud-i97" firstAttribute="centerX" secondItem="Ftc-Bg-8Ss" secondAttribute="centerX" id="Svd-mb-f6S"/>
+                            <constraint firstItem="mfH-Ud-i97" firstAttribute="top" secondItem="RND-6z-CcH" secondAttribute="top" constant="54" id="WFa-6i-OFH"/>
+                            <constraint firstItem="DjE-jA-OKF" firstAttribute="top" secondItem="mfH-Ud-i97" secondAttribute="bottom" constant="54" id="cbL-tB-Dsb"/>
+                            <constraint firstItem="DjE-jA-OKF" firstAttribute="leading" secondItem="mfH-Ud-i97" secondAttribute="leading" id="fCG-NO-lkv"/>
+                            <constraint firstItem="Ftc-Bg-8Ss" firstAttribute="top" secondItem="gtn-u2-J4h" secondAttribute="bottom" constant="54" id="gbo-6y-MNF"/>
+                            <constraint firstItem="gtn-u2-J4h" firstAttribute="leading" secondItem="DjE-jA-OKF" secondAttribute="leading" id="gkn-IJ-rHr"/>
+                            <constraint firstItem="gtn-u2-J4h" firstAttribute="top" secondItem="DjE-jA-OKF" secondAttribute="bottom" constant="54" id="lCH-3r-BRO"/>
+                            <constraint firstItem="gtn-u2-J4h" firstAttribute="leading" secondItem="Ftc-Bg-8Ss" secondAttribute="leading" id="vo2-hh-GQi"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="American Whiskey" id="xf9-ti-qrS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8u1-tA-OMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="804"/>
+        </scene>
+        <!--Main View Controller - AmericanWhiskey-->
+        <scene sceneID="cAT-zA-Wst">
+            <objects>
+                <viewController title="AmericanWhiskey" id="RMx-Ln-bM2" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xoR-R0-PEh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5X-3A-0HD" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="54" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="6SE-rU-1YA"/>
+                                    <constraint firstAttribute="height" constant="44" id="XUu-Ro-aq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Tennessee Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showTennesseeWhiskey" id="xmd-oV-BG1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hE-e1-nZx" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="152" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZnC-Qd-cyk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="White Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showWhiteWhiskey" id="AyD-S9-mP0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n81-XC-hmH" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="250" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kjf-CC-yr2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Wheat Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showWheatWhiskey" id="Wy7-Nl-DWi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-2j-fat" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="348" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="28G-7o-wMP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Other Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showOtherAmericanWhiskey" id="nle-5r-rol"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R5X-3A-0HD" firstAttribute="top" secondItem="xoR-R0-PEh" secondAttribute="top" constant="54" id="6Bd-vq-mDp"/>
+                            <constraint firstItem="0hE-e1-nZx" firstAttribute="top" secondItem="R5X-3A-0HD" secondAttribute="bottom" constant="54" id="9Jk-bq-ydK"/>
+                            <constraint firstItem="n81-XC-hmH" firstAttribute="leading" secondItem="MwC-2j-fat" secondAttribute="leading" id="CSL-OB-DX7"/>
+                            <constraint firstItem="0hE-e1-nZx" firstAttribute="centerX" secondItem="n81-XC-hmH" secondAttribute="centerX" id="LR7-nW-uz8"/>
+                            <constraint firstItem="n81-XC-hmH" firstAttribute="top" secondItem="0hE-e1-nZx" secondAttribute="bottom" constant="54" id="MHR-D6-PUs"/>
+                            <constraint firstItem="R5X-3A-0HD" firstAttribute="leading" secondItem="0hE-e1-nZx" secondAttribute="leading" id="Zzl-MH-cgC"/>
+                            <constraint firstItem="0hE-e1-nZx" firstAttribute="centerX" secondItem="xoR-R0-PEh" secondAttribute="centerX" id="bTA-sj-p3H"/>
+                            <constraint firstItem="0hE-e1-nZx" firstAttribute="centerX" secondItem="R5X-3A-0HD" secondAttribute="centerX" id="evt-T0-6fH"/>
+                            <constraint firstItem="0hE-e1-nZx" firstAttribute="centerX" secondItem="MwC-2j-fat" secondAttribute="centerX" id="gD8-Po-k1q"/>
+                            <constraint firstItem="n81-XC-hmH" firstAttribute="leading" secondItem="0hE-e1-nZx" secondAttribute="leading" id="kPk-tD-9ma"/>
+                            <constraint firstItem="MwC-2j-fat" firstAttribute="top" secondItem="n81-XC-hmH" secondAttribute="bottom" constant="54" id="wkX-vD-gMd"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Misc. American Whiskey" id="43F-jf-tsc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdU-Dd-2oc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="836"/>
+        </scene>
+        <!--Main View Controller - ForeignWhiskey-->
+        <scene sceneID="soR-1e-ZFC">
+            <objects>
+                <viewController title="ForeignWhiskey" id="7iY-Ps-a87" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOy-xd-Tye">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfR-kK-MW3" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="348" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="HhY-ib-30l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Other Whiskeys">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showOtherWhiskeys" id="yGQ-LM-qa2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsq-9u-RPP" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="250" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="54H-xL-NtL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Irish Whiskey">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showIrishWhiskey" id="Wl4-Zq-txD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-am-hd5" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="152" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Nfo-LC-dz4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Scotch Whisky">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showScotchWhisky" id="5xR-Qe-MtT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0F-j2-nfU" customClass="ClarendonButton">
+                                <rect key="frame" x="48" y="54" width="225" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="7ab-Ka-Qmf"/>
+                                    <constraint firstAttribute="height" constant="44" id="vgM-P0-HER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Canadian Whisky">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12" kind="push" identifier="showCanadianWhisky" id="8XB-ug-hS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gsq-9u-RPP" firstAttribute="leading" secondItem="bTi-am-hd5" secondAttribute="leading" id="09p-EO-cj4"/>
+                            <constraint firstItem="bTi-am-hd5" firstAttribute="centerX" secondItem="gsq-9u-RPP" secondAttribute="centerX" id="4Fa-qR-swK"/>
+                            <constraint firstItem="bTi-am-hd5" firstAttribute="leading" secondItem="k0F-j2-nfU" secondAttribute="leading" id="HxG-YQ-QP4"/>
+                            <constraint firstItem="GfR-kK-MW3" firstAttribute="centerX" secondItem="HOy-xd-Tye" secondAttribute="centerX" id="OH7-if-PGK"/>
+                            <constraint firstItem="bTi-am-hd5" firstAttribute="centerX" secondItem="GfR-kK-MW3" secondAttribute="centerX" id="VFh-vO-upU"/>
+                            <constraint firstItem="k0F-j2-nfU" firstAttribute="top" secondItem="HOy-xd-Tye" secondAttribute="top" constant="54" id="YXZ-KE-BEq"/>
+                            <constraint firstItem="GfR-kK-MW3" firstAttribute="leading" secondItem="gsq-9u-RPP" secondAttribute="leading" id="hxW-RC-f1W"/>
+                            <constraint firstItem="bTi-am-hd5" firstAttribute="centerX" secondItem="k0F-j2-nfU" secondAttribute="centerX" id="lAp-Si-BZ5"/>
+                            <constraint firstItem="bTi-am-hd5" firstAttribute="top" secondItem="k0F-j2-nfU" secondAttribute="bottom" constant="54" id="m8y-z2-0AP"/>
+                            <constraint firstItem="gsq-9u-RPP" firstAttribute="top" secondItem="bTi-am-hd5" secondAttribute="bottom" constant="54" id="rf8-nV-pjt"/>
+                            <constraint firstItem="GfR-kK-MW3" firstAttribute="top" secondItem="gsq-9u-RPP" secondAttribute="bottom" constant="54" id="snn-4W-aHK"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Imported Whisk(e)y" id="8eA-A8-QHl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRp-5Q-AUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="1463"/>
+        </scene>
+        <!--Master View Controller - Master-->
+        <scene sceneID="18">
+            <objects>
+                <tableViewController title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" detailTextLabel="WHf-dV-MAy" style="IBUITableViewCellStyleSubtitle" id="lJ0-d7-vTF">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
+                                            <rect key="frame" x="15" y="2" width="36" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WHf-dV-MAy">
+                                            <rect key="frame" x="15" y="24" width="49" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="21" kind="push" identifier="showDetail" id="bPC-qT-qV8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="12" id="16"/>
+                            <outlet property="delegate" destination="12" id="15"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Master" id="36"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="48"/>
+        </scene>
+        <!--Detail View Controller - Detail-->
+        <scene sceneID="24">
+            <objects>
+                <viewController title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="27" customClass="ClarendonLabel">
+                                <rect key="frame" x="20" y="102" width="280" height="283"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="lNj-b7-P9G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="comfort_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAN-IJ-rZr">
+                                <rect key="frame" x="25" y="22" width="275" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="bbc-Nb-cvx"/>
+                                    <constraint firstAttribute="height" constant="65" id="liA-25-J4w"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-Rw-oP0" customClass="ClarendonButton">
+                                <rect key="frame" x="71" y="502" width="178" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0bh-gl-A8k"/>
+                                    <constraint firstAttribute="width" constant="178" id="37r-ff-7Yz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Rate Item">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYX-bF-2aW" customClass="ClarendonButton">
+                                <rect key="frame" x="71" y="502" width="178" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Rate Item">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSomething:" destination="21" eventType="touchDragOutside" id="mYk-8N-lnW"/>
+                                    <segue destination="FeJ-Bc-ShN" kind="push" identifier="showNotes" id="rL0-i2-Odd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="27" firstAttribute="leading" secondItem="22" secondAttribute="leading" constant="20" symbolic="YES" id="2NH-Ds-Jon"/>
+                            <constraint firstItem="27" firstAttribute="centerX" secondItem="wYX-bF-2aW" secondAttribute="centerX" id="4y1-np-5lL"/>
+                            <constraint firstItem="wYX-bF-2aW" firstAttribute="trailing" secondItem="u7T-Rw-oP0" secondAttribute="trailing" id="BOd-Xc-CnG"/>
+                            <constraint firstAttribute="bottom" secondItem="wYX-bF-2aW" secondAttribute="bottom" constant="22" id="Cf6-Qs-KH0"/>
+                            <constraint firstAttribute="trailing" secondItem="27" secondAttribute="trailing" constant="20" symbolic="YES" id="H3q-FT-TqO"/>
+                            <constraint firstItem="gAN-IJ-rZr" firstAttribute="top" secondItem="22" secondAttribute="top" constant="22" id="KJv-LH-LWj"/>
+                            <constraint firstItem="27" firstAttribute="top" secondItem="22" secondAttribute="top" constant="102" id="Pkl-DK-P69"/>
+                            <constraint firstAttribute="trailing" secondItem="gAN-IJ-rZr" secondAttribute="trailing" constant="20" symbolic="YES" id="WPl-i1-tvn"/>
+                            <constraint firstItem="wYX-bF-2aW" firstAttribute="top" secondItem="u7T-Rw-oP0" secondAttribute="top" id="cTo-ua-Z0C"/>
+                            <constraint firstItem="u7T-Rw-oP0" firstAttribute="leading" secondItem="wYX-bF-2aW" secondAttribute="leading" id="g6u-Bs-cjl"/>
+                            <constraint firstItem="wYX-bF-2aW" firstAttribute="bottom" secondItem="u7T-Rw-oP0" secondAttribute="bottom" id="gWx-Ey-g3i"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Detail" id="26"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="27" id="28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2256" y="48"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="Ibn-T3-5Rk">
+            <objects>
+                <viewController id="FeJ-Bc-ShN" customClass="NotesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FIQ-DF-ODC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVy-rW-eXG">
+                                <rect key="frame" x="0.0" y="32" width="320" height="504"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="504" id="j21-DV-5Cc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="FeJ-Bc-ShN" eventType="touchUpInside" id="Rt2-ah-OKt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="sVG-kc-pxu" customClass="ClarendonLabel">
+                                <rect key="frame" x="20" y="12" width="280" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="VGa-Bh-e2N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U39-Wb-SB9">
+                                <rect key="frame" x="40" y="177" width="242" height="179"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="5nN-ka-UKc"/>
+                                    <constraint firstAttribute="height" constant="179" id="GhC-qB-kEk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzG-k2-HW7" customClass="ClarendonButton">
+                                <rect key="frame" x="50" y="492" width="222" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="ARI-1B-1Bj"/>
+                                    <constraint firstAttribute="height" constant="44" id="p3j-6p-SzE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Save Rating and Notes">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveNotes:" destination="FeJ-Bc-ShN" eventType="touchUpInside" id="bRM-Fh-RNV"/>
+                                    <segue destination="yUK-sj-fWt" kind="push" id="gtN-p0-TT4"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RAJ-b2-6Ab">
+                                <rect key="frame" x="102" y="109" width="118" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="7hU-Sx-tox"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="FeJ-Bc-ShN" eventType="valueChanged" id="TAx-46-p4o"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts5-BD-kor" customClass="ClarendonLabel">
+                                <rect key="frame" x="104" y="138" width="104" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="a4R-EL-5WD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwr-1b-NNB">
+                                <rect key="frame" x="50" y="544" width="0.0" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RAJ-b2-6Ab" firstAttribute="top" secondItem="FIQ-DF-ODC" secondAttribute="top" constant="109" id="1K6-eg-50c"/>
+                            <constraint firstItem="U39-Wb-SB9" firstAttribute="top" secondItem="FIQ-DF-ODC" secondAttribute="top" constant="177" id="4o8-tm-7ca"/>
+                            <constraint firstItem="nwr-1b-NNB" firstAttribute="leading" secondItem="IzG-k2-HW7" secondAttribute="leading" id="6Gh-un-Vhz"/>
+                            <constraint firstItem="RAJ-b2-6Ab" firstAttribute="leading" secondItem="ts5-BD-kor" secondAttribute="leading" id="7DR-eR-YXr"/>
+                            <constraint firstAttribute="bottom" secondItem="nwr-1b-NNB" secondAttribute="bottom" constant="7" id="9d0-Y3-8Sd"/>
+                            <constraint firstItem="IzG-k2-HW7" firstAttribute="centerX" secondItem="U39-Wb-SB9" secondAttribute="centerX" id="MPm-6R-9iq"/>
+                            <constraint firstItem="JVy-rW-eXG" firstAttribute="trailing" secondItem="FIQ-DF-ODC" secondAttribute="trailing" id="NgQ-ok-5W1"/>
+                            <constraint firstItem="JVy-rW-eXG" firstAttribute="centerY" secondItem="FIQ-DF-ODC" secondAttribute="centerY" id="Q6P-Z1-iPV"/>
+                            <constraint firstItem="ts5-BD-kor" firstAttribute="top" secondItem="FIQ-DF-ODC" secondAttribute="top" constant="138" id="SBE-k4-0bx"/>
+                            <constraint firstItem="JVy-rW-eXG" firstAttribute="leading" secondItem="FIQ-DF-ODC" secondAttribute="leading" id="YzI-X7-6bB"/>
+                            <constraint firstItem="sVG-kc-pxu" firstAttribute="leading" secondItem="FIQ-DF-ODC" secondAttribute="leading" constant="20" symbolic="YES" id="bdV-Tc-rGt"/>
+                            <constraint firstAttribute="trailing" secondItem="sVG-kc-pxu" secondAttribute="trailing" constant="20" symbolic="YES" id="cY0-Yh-hn8"/>
+                            <constraint firstItem="nwr-1b-NNB" firstAttribute="top" secondItem="IzG-k2-HW7" secondAttribute="bottom" constant="8" symbolic="YES" id="eYl-qi-RYd"/>
+                            <constraint firstItem="IzG-k2-HW7" firstAttribute="leading" secondItem="FIQ-DF-ODC" secondAttribute="leading" constant="50" id="fEN-wd-8ot"/>
+                            <constraint firstItem="RAJ-b2-6Ab" firstAttribute="centerX" secondItem="U39-Wb-SB9" secondAttribute="centerX" id="xvG-j5-vCU"/>
+                            <constraint firstItem="sVG-kc-pxu" firstAttribute="top" secondItem="FIQ-DF-ODC" secondAttribute="top" constant="12" id="zeI-iE-3wf"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="xqc-5d-FPU"/>
+                    <connections>
+                        <outlet property="notesLabel" destination="sVG-kc-pxu" id="Scl-4A-1E8"/>
+                        <outlet property="notesTextView" destination="U39-Wb-SB9" id="t3j-iF-035"/>
+                        <outlet property="ratingLabel" destination="ts5-BD-kor" id="m4K-lV-iOl"/>
+                        <outlet property="ratingSlider" destination="RAJ-b2-6Ab" id="1m3-Xw-RYa"/>
+                        <outlet property="tweetButton" destination="nwr-1b-NNB" id="NRY-rg-qfV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoB-bn-DuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2745" y="41"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="comfort_pig.png" width="855" height="556"/>
+        <image name="comfort_small.png" width="240.24801635742188" height="49.201641082763672"/>
+    </resources>
+    <classes>
+        <class className="ClarendonButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ClarendonButton.h"/>
+        </class>
+        <class className="ClarendonLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ClarendonLabel.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="checkForUpdates:"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NotesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NotesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissKeyboard:"/>
+                <relationship kind="action" name="saveNotes:"/>
+                <relationship kind="action" name="sliderValueChanged:"/>
+                <relationship kind="outlet" name="notesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="notesTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="ratingLabel" candidateClass="ClarendonLabel"/>
+                <relationship kind="outlet" name="ratingSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="tweetButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="gtN-p0-TT4"/>
+        <segue reference="LlX-og-dvg"/>
+    </inferredMetricsTieBreakers>
+</document>

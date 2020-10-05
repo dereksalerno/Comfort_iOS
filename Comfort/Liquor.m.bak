@@ -1,0 +1,69 @@
+//
+//  Liquor.m
+//  Comfort
+//
+//  Created by Derek Salerno on 1/31/13.
+//  Copyright (c) 2013 Derek Salerno. All rights reserved.
+//
+
+#import "Liquor.h"
+
+@implementation Liquor
+
+@dynamic category, name, notes, rating;
+
+@synthesize distiller, bottling, age, proof, price, place, type, isCocktail, hasBottling, hasAge;
+
+-(BOOL)isCocktail{
+    BOOL tmpBool;
+    if ([self.type isEqualToString:@"cocktail"] )
+         return YES;
+    else {
+         tmpBool = NO;
+    }
+    return tmpBool;
+}
+-(NSString* )category{
+    return @"liquor";
+}
+
+-(NSString*)description{
+    if ((self.bottling)&&(!self.isCocktail)){
+        NSMutableString *tmp = [[NSMutableString alloc]initWithString:distiller];
+        [tmp appendString:@" "];
+        [tmp appendString:bottling];
+        return tmp;
+    }
+    else {
+        return distiller;
+    }
+}
+-(NSString*)subTitleDescription{
+    NSString *tmpString;
+    if (self.age){
+        tmpString = [NSString stringWithFormat:@"%@ %@",bottling, age];
+    }else{
+        tmpString = [NSString stringWithString:bottling];
+    }
+    return tmpString;
+}
+-(NSString*)detailString{
+    NSMutableString* tmpString = [[NSMutableString alloc]init];
+    //This is the logic for a cocktail description.
+    if (self.isCocktail){
+        [tmpString appendFormat:@"[Cocktail]: %@\n[Ingredients]: %@\n[Price]: %@", distiller, bottling, price];
+    }
+    else  {
+        [tmpString appendFormat:@"[Distiller]: %@\n", distiller];
+    if (self.bottling){
+        [tmpString appendFormat:@"[Bottling]: %@\n", bottling];
+    }if (self.age){
+        [tmpString appendFormat:@"[Age]: %@\n", age];
+    }
+        [tmpString appendFormat:@"[Type]: %@\n[Place distilled]: %@\n[Proof]: %@\n[Price]: %@", type, place, proof, price];
+    }
+
+    return tmpString;
+}
+
+@end

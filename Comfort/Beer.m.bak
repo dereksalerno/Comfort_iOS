@@ -1,0 +1,40 @@
+//
+//  Beer.m
+//  Comfort
+//
+//  Created by Derek Salerno on 1/31/13.
+//  Copyright (c) 2013 Derek Salerno. All rights reserved.
+//
+
+#import "Beer.h"
+
+@implementation Beer
+
+@dynamic category, rating, notes;
+
+@synthesize brewery, bottling, place, price, type;
+
+-(NSString*)category{
+    return @"beer";
+}
+-(NSString*)detailString{
+    NSMutableString* tmpString = [[NSMutableString alloc]
+                                  initWithFormat:@"[Brewery]: %@\n", brewery];
+    if (self.bottling){
+        [tmpString appendFormat:@"[Bottling]: %@\n",bottling];
+    }
+    [tmpString appendFormat:@"[Place Brewed]: %@\n", place];
+    [tmpString appendFormat:@"[Price]: %@", price];
+    return tmpString;
+}
+
+-(NSString*)description{
+    NSMutableString* tmpVal = [NSMutableString stringWithString:brewery];
+    if (self.bottling){
+        [tmpVal appendFormat:@" %@", bottling];
+    }
+    return tmpVal;
+}
+
+
+@end

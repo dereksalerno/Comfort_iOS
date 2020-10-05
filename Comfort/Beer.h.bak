@@ -1,0 +1,21 @@
+//
+//  Beer.h
+//  Comfort
+//
+//  Created by Derek Salerno on 1/31/13.
+//  Copyright (c) 2013 Derek Salerno. All rights reserved.
+//
+
+#import "MenuItem.h"
+
+@interface Beer : MenuItem
+@property (strong, nonatomic) NSString* brewery;
+@property (strong, nonatomic) NSString* bottling;
+@property (strong, nonatomic) NSString* place;
+@property (strong, nonatomic) NSString* type;
+
+
+-(NSString*)category;
+-(NSString*)detailString;
+-(NSString*)description;
+@end
