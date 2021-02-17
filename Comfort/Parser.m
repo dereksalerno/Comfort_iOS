@@ -248,7 +248,7 @@ didStartElement:(NSString *)elementName
         networkIsAvailable = YES;
         NSLog(@"Network is available");
     }
-    
+    // Check network and fetch the updated xml file
     if (networkIsAvailable){
     NSString* filePath = @"https://dl.dropboxusercontent.com/u/37475053/comfort_bar.xml";
     NSString* fetchedData  = [NSString stringWithContentsOfURL:[NSURL URLWithString:filePath] encoding:NSUTF8StringEncoding error:nil];
