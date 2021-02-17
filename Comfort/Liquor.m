@@ -27,7 +27,7 @@
 
 
 
-
+// Check to see if object is a stand-alone spirit with a sub-brand. I.E. Distiller = "Jim Beam" Bottling = "Black". Return a string that joins them
 -(NSString*)description{
     if ((self.bottling)&&(!self.isCocktail.boolValue)){
         NSMutableString *tmp = [[NSMutableString alloc]initWithString:self.distiller];
